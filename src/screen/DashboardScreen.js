@@ -2,9 +2,9 @@ import React, { useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { listproduct } from '../action/produkaction';
 import Listproduk from './Listproduk'
+import PropTypes from 'prop-types';
 
 export default function Dashboard() {
-    // const [ products, setProduk ] = useState([])
     const productList = useSelector((state) => state.productList)
     const dispatch = useDispatch();
     const { products } = productList;
@@ -21,3 +21,7 @@ export default function Dashboard() {
         </div>
     )
 }
+
+Dashboard.propTypes = {
+  products: PropTypes.any
+};
