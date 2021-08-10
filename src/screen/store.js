@@ -2,7 +2,7 @@ import {createStore,compose, applyMiddleware, combineReducers} from 'redux'
 import thunk from 'redux-thunk'
 import { cartReducer } from '../reducer/cartreducer';
 import { productListReducer, productDetailsListReducer} from '../reducer/produkreducer';
-import { userSigninReducer } from './reducer/userReducer';
+import { userSigninReducer } from '../reducer/userreducer';
 
 const initializestate = {
     userSignin : {

@@ -1,6 +1,6 @@
 const {
     PRODUCT_LIST_SUCCESS,
-    PRODUCTDETAILS_LIST_SUCCESS
+    PRODUCTDETAILS_LIST_SUCCESS,
 } = require('../constant/produkconstant')
 
 export const productListReducer = (state={products : []}, action)=>{
@@ -15,7 +15,7 @@ export const productListReducer = (state={products : []}, action)=>{
 export const productDetailsListReducer = (state={product :{}}, action)=>{
     switch(action.type){
         case PRODUCTDETAILS_LIST_SUCCESS:
-            return{loading:false, product: action.payload}
+            return {loading:false, product: action.payload}
         default:
             return state
     }

@@ -18,7 +18,7 @@ export default function CartScreen(props){
     }, [dispatch, productId, Qty])
 
     const checkoutHandler = () => {
-        props.history.push('/signin?redirect=shipping')
+        props.history.push('/signin?redirect=dashboard')
     }
     const removeFromCartHandler = (id) => {
         dispatch(removeFromCart(id))

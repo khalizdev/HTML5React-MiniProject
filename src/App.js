@@ -6,7 +6,7 @@ import Dashboard from './screen/DashboardScreen';
 import CartScreen from './screen/KeranjangScreen';
 import Produk from './screen/ProdukScreen';
 import SinginScreen from './screen/SignInScreen';
-import { keluar } from './action/userAction';
+import { keluar } from './action/useraction';
 
 function App() {
   const cart = useSelector((state) => state.cart)

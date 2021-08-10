@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { singin } from '../action/userAction'
+import { singin } from '../action/useraction'
 import PropTypes from 'prop-types';
 
 export default function SinginScreen (props) {
